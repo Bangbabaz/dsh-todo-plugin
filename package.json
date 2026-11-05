@@ -1,9 +1,12 @@
 {
-  "name": "@bangbabaz/dsh-todo-plugin",
+  "name": "@bangbaba0228/dsh-todo-plugin",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Lightweight personal todo list beside the DSH conversation.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bangbabaz/dsh-todo-plugin.git"
+  },
   "scripts": {
     "build": "node tools/build.mjs",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.test.json",

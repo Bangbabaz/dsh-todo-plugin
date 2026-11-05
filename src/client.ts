@@ -31,7 +31,7 @@ interface EditValues { title: string; due: string; note: string; owner: Owner; o
  * live. All of them read and write through the Host routes.
  */
 window.__ModuleLoader__.load({
-  id: '@bangbabaz/dsh-todo-plugin',
+  id: '@bangbaba0228/dsh-todo-plugin',
   factory(require) {
     const warn = (what: string, detail?: unknown) => {
       try { console.warn(`[dsh-todo] ${what}`, detail) } catch { /* no console */ }

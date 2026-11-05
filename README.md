@@ -1,6 +1,6 @@
 # dsh-todo-plugin
 
-`@bangbabaz/dsh-todo-plugin` — DSH 会话里的轻量个人待办插件。右侧待办侧栏与聊天并排，AI 把会话中的材料整理成一张候选卡片，用户确认后才写入全局清单。
+`@bangbaba0228/dsh-todo-plugin` — DSH 会话里的轻量个人待办插件。右侧待办侧栏与聊天并排，AI 把会话中的材料整理成一张候选卡片，用户确认后才写入全局清单。
 
 ## 特点
 
