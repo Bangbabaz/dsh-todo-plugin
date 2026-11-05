@@ -1,0 +1,9 @@
+# dsh-todo bundle patch
+#
+# Adds the personal todo plugin row. The row carries no config: the store lives
+# under the profile directory and the browser half is discovered from
+# package.json `dsh.client`.
+
+- insert:
+    - id: dsh-todo
+      name: '@bangbabaz/dsh-todo-plugin'

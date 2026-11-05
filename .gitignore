@@ -1,0 +1,38 @@
+# Dependencies and build output
+node_modules/
+/dist/
+/.dsh-todo-build-*/
+*.tsbuildinfo
+*.tgz
+
+# Test reports and browser artifacts
+/coverage/
+/test-results/
+/playwright-report/
+/blob-report/
+/todo-ui-shots-*/
+
+# Local runtime data and environment configuration
+/todo-data/
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.template
+
+# Logs, temporary files and backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.bak-*
+*.swp
+*.swo
+*~
+
+# Local editor and operating system files
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,51 @@
+{
+  "name": "@bangbabaz/dsh-todo-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lightweight personal todo list beside the DSH conversation.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.test.json",
+    "test": "npm run typecheck && npm run build && node tests/smoke.mjs && node --test tests/regressions.mjs tests/validation.mjs && node tools/client-probe.mjs",
+    "test:browser": "npm run build && node tests/browser.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.62.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^6.0.3"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./client": "./dist/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "dist",
+    "src",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "types": "./dist/index.d.ts"
+}
